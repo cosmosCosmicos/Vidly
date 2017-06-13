@@ -122,3 +122,4 @@ C:\Users\Loky\Documents\Visual Studio 2017\Projects\Vidly\Vidly\obj\Debug\Vidly.
 C:\Users\Loky\Documents\Visual Studio 2017\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
 C:\Users\Loky\Documents\Visual Studio 2017\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddNameToMembershipType.resources
 C:\Users\Loky\Documents\Visual Studio 2017\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthdateToCustomers.resources
+C:\Users\Loky\Documents\Visual Studio 2017\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenres.resources
