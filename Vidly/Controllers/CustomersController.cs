@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -21,6 +22,35 @@ namespace Vidly.Controllers
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
+        }
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new CustomerFormViewModel
+            {
+                MembershipTypes =  membershipTypes
+            };
+            return View("CustomerForm",viewModel);
+        }
+        
+        [HttpPost]
+        public ActionResult Save(Customer customer)
+        {
+            if (customer.Id == 0)
+            {
+                _context.Customers.Add(customer);
+            }
+            else
+            {
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+                customerInDb.Name = customer.Name;
+                customerInDb.Birthdate = customer.Birthdate;
+                customerInDb.IsSuscribedToNewsLetter = customer.IsSuscribedToNewsLetter;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customers");
         }
 
         // GET: Customers
@@ -48,6 +78,20 @@ namespace Vidly.Controllers
                 new Customer() { Name = "Jorge Guiloff", Id=2}
             };
             return customers;
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            if(customer == null)
+                return HttpNotFound();
+            var viewModel = new CustomerFormViewModel
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+            return View("CustomerForm",viewModel);
+            
         }
     }
 }
