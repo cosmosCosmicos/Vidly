@@ -199,6 +199,10 @@
     <Compile Include="Migrations\201706130224089_PopulateGenres.Designer.cs">
       <DependentUpon>201706130224089_PopulateGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706132127562_DbsetGenre.cs" />
+    <Compile Include="Migrations\201706132127562_DbsetGenre.Designer.cs">
+      <DependentUpon>201706132127562_DbsetGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -210,6 +214,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -275,6 +280,7 @@
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <None Include="Views\Movies\Details.cshtml" />
     <None Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -310,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706130224089_PopulateGenres.resx">
       <DependentUpon>201706130224089_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706132127562_DbsetGenre.resx">
+      <DependentUpon>201706132127562_DbsetGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
