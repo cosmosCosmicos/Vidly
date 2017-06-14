@@ -126,3 +126,4 @@ C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\D
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache

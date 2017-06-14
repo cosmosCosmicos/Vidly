@@ -15,11 +15,11 @@
     </div>
     <div class="form-group ">
         @Html.LabelFor(m => m.Movie.RealeseDate)
-        @Html.TextBoxFor(m => m.Movie.RealeseDate, new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.Movie.RealeseDate,"{0:d MMM yyyy}", new { @class = "form-control" })
     </div>
     <div class="form-group ">
-        @Html.LabelFor(m => m.Movie.Genre)
-        @Html.DropDownListFor(m => m.Movie.Genre, new SelectList(Model.Genres, "Id", "Name"), "Select Genre",new {@class="form-control"})
+        @Html.LabelFor(m => m.Movie.GenreId)
+        @Html.DropDownListFor(m => m.Movie.GenreId, new SelectList(Model.Genres, "Id", "Name"), "Select Genre",new {@class="form-control"})
     </div>
     <div class="form-group ">
         @Html.LabelFor(m => m.Movie.NumberInStock)
