@@ -127,3 +127,9 @@ C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\D
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
