@@ -21,7 +21,7 @@ namespace Vidly.Controllers.Api
         {
             return _context.Customers.ToList();
         }
-
+        
         public Customer GetCustomer(int id)
         {
             var customer = _context.Customers.FirstOrDefault(c => c.Id == id);
