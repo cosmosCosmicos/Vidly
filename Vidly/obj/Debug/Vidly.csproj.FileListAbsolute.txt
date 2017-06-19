@@ -133,3 +133,5 @@ C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\S
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Web.Http.xml
 C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\mario guiloff s\Documents\Visual Studio 2013\Projects\Vidly\Vidly\bin\AutoMapper.xml

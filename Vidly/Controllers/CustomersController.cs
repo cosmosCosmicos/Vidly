@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
+using Vidly.Dtos;
 using Vidly.Models;
 using Vidly.ViewModels;
 
@@ -11,7 +13,7 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
 
         public CustomersController()
@@ -81,14 +83,9 @@ namespace Vidly.Controllers
             return View(customer);
 
         }
-        private IEnumerable<Customer> GetCustomers()
+        private IEnumerable<CustomerDto> GetCustomers()
         {
-            var customers = new List<Customer>
-            {
-                new Customer() { Name = "Mario Guiloff", Id=1},
-                new Customer() { Name = "Jorge Guiloff", Id=2}
-            };
-            return customers;
+            return _context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>);
         }
 
         public ActionResult Edit(int id)
