@@ -12,8 +12,14 @@ namespace Vidly.App_Start
     {
         public MappingProfiles()
         {
-            CreateMap<Customer, CustomerDto>();
+            CreateMap<Customer, CustomerDto>().ForMember(m => m.Id, opt => opt.Ignore()); ;
             CreateMap<CustomerDto, Customer>();
+            CreateMap<Movie, MovieDto>();
+            CreateMap<MovieDto, Movie>();
+            CreateMap<MembershipType, MembershipTypeDto>();
+            CreateMap<MembershipTypeDto, MembershipType>();
+            CreateMap<Genre, GenreDto>();
+            CreateMap<GenreDto, Genre>();
 
         }
     }

@@ -38,6 +38,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.RenderFormat("<script type=\"text/javascript\" src='{0}'></script>","~/bundles/jqueryDataTables")
+    @Scripts.RenderFormat("<script type=\"text/javascript\" src='{0}'></script>", "~/bundles/bootbox")
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>
