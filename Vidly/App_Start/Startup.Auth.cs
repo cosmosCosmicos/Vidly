@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Facebook;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Vidly.Models;
@@ -54,9 +55,16 @@ namespace Vidly
             //   consumerKey: "",
             //   consumerSecret: "");
 
+            var options = new FacebookAuthenticationOptions
+            {
+                AppId = "1422898887793116",
+                AppSecret = "3221e2af6916a9fe205aaac43dec1e93",
+                CallbackPath = new PathString("/oauth-redirect/facebook")
+            };
+            app.UseFacebookAuthentication(options);
             //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            //   appId: "1422898887793116",
+            //   appSecret: "3221e2af6916a9fe205aaac43dec1e93");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
