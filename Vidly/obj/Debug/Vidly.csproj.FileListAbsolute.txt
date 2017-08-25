@@ -210,3 +210,4 @@ C:\Users\mario guiloff s.AIEP\Documents\Visual Studio 2013\Projects\Vidly\Vidly\
 C:\Users\mario guiloff s.AIEP\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
 C:\Users\mario guiloff s.AIEP\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
 C:\Users\mario guiloff s.AIEP\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
+C:\Users\mario guiloff s.AIEP\Documents\Visual Studio 2013\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhoneToApplicationUser.resources
