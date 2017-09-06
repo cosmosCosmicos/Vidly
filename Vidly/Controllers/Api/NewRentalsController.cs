@@ -45,6 +45,8 @@ namespace Vidly.Controllers.Api
                     DateRented = DateTime.Now
                 };
                 _context.Rentals.Add(rental);
+                
+                _context.SaveChanges();
             }
             return Ok();
         }

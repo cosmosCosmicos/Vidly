@@ -26,7 +26,7 @@ namespace Vidly.Controllers.Api
         //        .ToList()
         //        .Select(Mapper.Map<Customer,CustomerDto>);
         //    return Ok(customerDtos);
-        //}
+        //}you
 
         public IHttpActionResult GetCustomer(int id)
         {
